@@ -1,0 +1,16 @@
+[package]
+name = "coerce_pattern"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Macros that coerce expressions into patterns, panicking on failure"
+readme = "README.md"
+homepage = "https://github.com/ktausch/coerce_pattern"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.94"
+quote = "1.0.40"
+syn = { version = "2.0.100", features = ["full"] }
